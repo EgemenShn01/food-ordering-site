@@ -2,21 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+   margin: 0%;
+   padding: 0%;
+   font-family: 'Open Sans', sans-serif;   
+}
+.btn-primary{
+   @apply text-white px-[42px] py-[10px] rounded-3xl bg-black shadow-2xl shadow-white cursor-pointer hover:opacity-70 transition-all ; 
+}
+.btn-secondary{
+   @apply text-black px-[42px] py-[10px] rounded-3xl bg-white shadow-2xl shadow-black cursor-pointer hover:opacity-70 transition-all ; 
+}
+.slick-dots{
+   @apply !flex ml-0 gap-x-4 
+}
+.btn-secondary
+{
+   @apply text-black px-[30px] py-[12px] rounded-3xl hover:bg-secondery hover:text-white cursor-pointer transition-all ; 
 }
